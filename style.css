@@ -1,0 +1,310 @@
+/* =========================================
+   GENERAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #e8e8e8;
+
+    color: #222;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   RESUME PAGE
+========================================= */
+
+.resume {
+    width: 850px;
+
+    max-width: 95%;
+
+    margin: 30px auto;
+
+    padding: 40px 45px;
+
+    background-color: white;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 20px;
+
+    border-bottom: 3px solid #174a7e;
+}
+
+
+.header-info {
+    flex: 1;
+}
+
+
+.header-info h1 {
+    font-size: 34px;
+
+    color: #174a7e;
+
+    margin-bottom: 5px;
+}
+
+
+.header-info h3 {
+    font-size: 17px;
+
+    font-weight: normal;
+
+    margin-bottom: 12px;
+
+    color: #444;
+}
+
+
+.header-info p {
+    font-size: 13px;
+
+    margin-bottom: 3px;
+}
+
+
+/* =========================================
+   PROFILE IMAGE
+========================================= */
+
+.profile-image {
+    width: 125px;
+
+    height: 145px;
+
+    object-fit: cover;
+
+    border: 2px solid #174a7e;
+
+    margin-left: 25px;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section {
+    margin-top: 22px;
+}
+
+
+section h2 {
+    font-size: 16px;
+
+    color: #174a7e;
+
+    border-bottom: 1px solid #174a7e;
+
+    padding-bottom: 5px;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+section p {
+    font-size: 13.5px;
+
+    line-height: 1.6;
+
+    text-align: justify;
+
+    margin-bottom: 6px;
+}
+
+
+/* =========================================
+   EDUCATION
+========================================= */
+
+.education-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+
+.education-item h3 {
+    font-size: 14.5px;
+
+    margin-bottom: 3px;
+}
+
+
+.education-item p {
+    margin-bottom: 2px;
+}
+
+
+.education-item span {
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TECHNICAL SKILLS
+========================================= */
+
+.skill-list p {
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   LISTS
+========================================= */
+
+ul {
+    padding-left: 22px;
+}
+
+
+li {
+    font-size: 13.5px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.project {
+    margin-bottom: 16px;
+}
+
+
+.project h3 {
+    font-size: 15px;
+
+    margin-bottom: 4px;
+
+    color: #333;
+}
+
+
+.project p {
+    margin-bottom: 4px;
+}
+
+
+/* =========================================
+   STRENGTHS
+========================================= */
+
+.strengths {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.strengths span {
+    border: 1px solid #174a7e;
+
+    color: #174a7e;
+
+    padding: 5px 12px;
+
+    font-size: 13px;
+
+    border-radius: 3px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    margin-top: 30px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #ccc;
+
+    text-align: right;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .resume {
+        width: 95%;
+
+        padding: 25px 20px;
+    }
+
+
+    .header {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 15px;
+    }
+
+
+    .profile-image {
+        margin-left: 0;
+    }
+
+
+    .header-info h1 {
+        font-size: 27px;
+    }
+
+
+    .education-item {
+        flex-direction: column;
+    }
+
+
+    .education-item span {
+        margin-top: 3px;
+    }
+
+}
